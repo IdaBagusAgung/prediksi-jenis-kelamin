@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
-!pip install scikit-learn
-from sklearn.feature_extraction.text import TfidfVectorizer
+# !pip install scikit-learn
+# from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Load the pickle models
 model_nb = pickle.load(open('nb_model.pkl', 'rb'))
