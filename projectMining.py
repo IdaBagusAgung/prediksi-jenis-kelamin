@@ -35,9 +35,9 @@ def main():
         pred_svm, confidence_svm = predict_gender(name, model_svm, tfidf_vectorizer)
         
         # Convert predictions to gender labels
-        pred_nb_label = 'Pria' if pred_nb == 1 else 'Wanita'
-        pred_rf_label = 'Pria' if pred_rf == 1 else 'Wanita'
-        pred_svm_label = 'Pria' if pred_svm == 1 else 'Wanita'
+        pred_nb_label = 'Laki-Laki' if pred_nb == 1 else 'Perempuan'
+        pred_rf_label = 'Laki-Laki' if pred_rf == 1 else 'Perempuan'
+        pred_svm_label = 'Laki-Laki' if pred_svm == 1 else 'Perempuan'
         
         # Display predictions
         st.subheader('Hasil Prediksi')
