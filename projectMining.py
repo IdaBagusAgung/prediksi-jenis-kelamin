@@ -47,21 +47,21 @@ def main():
         st.write('Prediksi Logistic Regression:', pred_svm_label)
         
         # Display confidence scores (if available)
-        st.subheader('Confidence Score (Jika Tersedia)')
+        st.subheader('Probability Score (Jika Tersedia)')
         if confidence_nb is not None:
-            st.write(f'Confidence Naive Bayes: {confidence_nb[0][pred_nb]:.2%}')
+            st.write(f'Probability Naive Bayes: {confidence_nb[0][pred_nb]:.2%}')
         else:
-            st.write('Confidence Naive Bayes: Tidak tersedia')
+            st.write('Probability Naive Bayes: Tidak tersedia')
         
         if confidence_rf is not None:
-            st.write(f'Confidence Random Forest: {confidence_rf[0][pred_rf]:.2%}')
+            st.write(f'Probability Random Forest: {confidence_rf[0][pred_rf]:.2%}')
         else:
-            st.write('Confidence Random Forest: Tidak tersedia')
+            st.write('Probability Random Forest: Tidak tersedia')
         
         if confidence_svm is not None:
-            st.write(f'Confidence Logistic Regression: {confidence_svm[0][pred_svm]:.2%}')
+            st.write(f'Probability Logistic Regression: {confidence_svm[0][pred_svm]:.2%}')
         else:
-            st.write('Confidence Logistic Regression: Tidak tersedia')
+            st.write('Probability Logistic Regression: Tidak tersedia')
 
 if __name__ == '__main__':
     main()
